@@ -6,3 +6,5 @@ using special functions that have to do with elliptic integrals. It also generat
 
 CurrentModelsV2 : C# script of the second version of a series of functions that compute current as a function of time according to different mathematical methods. Three models are coded : rectangular, sinusoidal and a gaussian curve. The rectangular current approach creates violent, unrealistic acceleration of the payload because of the immediate increase in amperage, but it proved useful in early development to kick things off. The gaussian approach is perhaps the more "standard" model for this kind of situation, and the sinusoid was briefly tinkered with. 
 
+ForceModelV2 : An older C# script of the second version of a series of functions that calculate axial magnetic fields used to actually apply force on the payload. They use finite differences with a small epsilon offset to approximate the gradient of B, necessary to use the force on a magnetic dipole formula (considering that the payload is a magnetic dipole). 
+
