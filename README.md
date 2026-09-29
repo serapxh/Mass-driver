@@ -8,3 +8,5 @@ CurrentModelsV2 : C# script of the second version of a series of functions that 
 
 ForceModelV2 : An older C# script of the second version of a series of functions that calculate axial magnetic fields used to actually apply force on the payload. They use finite differences with a small epsilon offset to approximate the gradient of B, necessary to use the force on a magnetic dipole formula (considering that the payload is a magnetic dipole). 
 
+PayloadPhysicsV4 : A C# script of the fourth version of the real-time loop that manages the payload physics every frame. This one is rather dense, so it's worth streamlining it this way:
+- The script iterates over every coil ahead of the payload 
